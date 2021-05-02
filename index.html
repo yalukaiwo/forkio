@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,60 @@
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
-    
+    <section class="page__introduction intro">
+        <div class="intro__header intro__header--desktop header">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo logo">
+                    <div class="logo__image"></div>
+                    <h3 class="logo__text">forkio</h3>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__menu menu">
+                        <a class="menu__item menu__item--desktop">overview</a>
+                        <a class="menu__item menu__item--desktop">about fork</a>
+                        <a class="menu__item menu__item--desktop">buying options</a>
+                        <a class="menu__item menu__item--desktop">support</a>
+                        <a class="menu__buy-btn">buy now</a>
+                    </ul>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__top"></span>
+                    <span class="burger__middle"></span>
+                    <span class="burger__bottom"></span>
+                </div>
+                <div class="header__burger-content">
+                    <ul class="header__burger-menu burger-menu">
+                        <div class="burger-menu__item-holder">
+                            <a class="burger-menu__item burger-menu__item--current">overview</a>
+                        </div>
+                        <div class="burger-menu__item-holder">
+                            <a class="burger-menu__item">about fork</a>
+                        </div>
+                        <div class="burger-menu__item-holder">
+                            <a class="burger-menu__item">buying options</a>
+                        </div>
+                        <div class="burger-menu__item-holder">
+                            <a class="burger-menu__item">support</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav header__nav--tablet">
+                <ul class="header__menu menu">
+                    <a class="menu__item">overview</a>
+                    <a class="menu__item">about fork</a>
+                    <a class="menu__item">buying options</a>
+                    <a class="menu__item">support</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="intro__content intro-content">
+            <h2 class="intro-content__title">fork app</h2>
+            <p class="intro-content__subtitle">A real gamechanger in the world of web development</p>
+            <p class="intro-content__version">v. 2.8 For Mac and Windows</p>
+        </div>
+        <button class="intro__download">download for free now</button>
+    </section>
 <script src="./dist/js/script.min.js"></script>
 </body>
 </html>
