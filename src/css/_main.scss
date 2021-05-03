@@ -1,0 +1,298 @@
+.page__introduction {
+    background-image: url(../../dist/img/forkio-header-bgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    padding-bottom: 459px;
+    @media (max-width: 992px) {
+        padding-bottom: 472px;
+    }
+    @media (max-width: 480px) {
+        padding-bottom: 416px;
+    }
+    position: relative;
+}
+
+.intro__header {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 90px;
+    @media (max-width: 992px) {
+        background-color: #27262A;
+        padding: 20px;
+    }
+    @media (max-width: 480px) {
+        padding: 30px 15px;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $purple;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    &:hover {
+        color: #ffffff;
+        .logo__image {
+            background-image: url(../../dist/img/logo-hover.png);
+        }
+    }
+}
+
+.logo__text {
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.logo__image {
+    background-image: url(../../dist/img/logo.png);
+    width: 43px;
+    height: 41px;
+    margin-right: 17px;
+    @media (max-width: 480px) {
+        margin: 0;
+    }
+}
+
+.header__menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    @media (max-width: 992px) {
+        gap: 28px;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    color: $purple;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    &:hover {
+        color: #ffffff;
+    }
+    &--desktop {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.menu__buy-btn {
+    color: white;
+    padding: 11px 20px;
+    background-color: $purple;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 17px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border: 1px solid $purple;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    &:hover {
+        color: $purple;
+        background: #ffffff;
+    }
+}
+
+.header__nav--tablet {
+    display: none;
+    justify-content: center;
+    margin-top: 22px;
+    @media (max-width: 992px) {
+        display: flex;
+    }
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.burger {
+    position: relative;
+    width: 26px;
+    height: 21px;
+    display: none;
+    @media (max-width: 480px) {
+        display: block;
+    }
+    &__top {
+        @extend %burgerLineDefault;
+        width: 15px;
+        height: 3px;
+        right: 0;
+        top: 0;
+    }
+    &__middle {
+        @extend %burgerLineDefault;
+        width: 26px;
+        height: 3px;
+        right: 0;
+        top: 9px;
+    }
+    &__bottom {
+        @extend %burgerLineDefault;
+        width: 26px;
+        height: 3px;
+        right: 0;
+        bottom: 0;
+    }
+    &--active {
+        .burger__top {
+            display: none;
+        }
+        .burger__middle {
+            top: 9px;
+            right: -3px;
+            width: 30px;
+            transform: rotate(45deg);
+        }
+        .burger__bottom {
+            top: 9px;
+            right: -3px;
+            width: 30px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.header__burger-content {
+    position: absolute;
+    background-color: #333333;
+    top: 100%;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.header__burger-content--active {
+    display: block;
+    @media (min-width: 481px) {
+        display: none;
+    }
+}
+
+.burger-menu__item {
+    display: block;
+    font-size: 26px;
+    color: $purple;
+    padding: 15px 35px 15px 50px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    &:hover, &:active, &:focus, &--current {
+        box-sizing: border-box;
+        border-left: 8px solid $purple;
+        padding-left: 42px;
+    }
+}
+
+.burger-menu__item-holder {
+    padding: 16px 0;
+    border-bottom: 3px solid #3b3b3b;
+}
+
+.intro__content {
+    margin: 0 auto;
+    margin-top: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    @media (max-width: 992px) {
+        margin-top: 68px;
+    }
+    @media (max-width: 480px) {
+        padding: 0 40px;
+        margin-top: 50px;
+    }
+}
+
+.intro-content__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 82px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+    @media (max-width: 992px) {
+        font-size: 72px;
+    }
+    @media (max-width: 480px) {
+        font-size: 48px;
+    }
+}
+
+.intro-content__subtitle {
+    font-family: 'Lato', sans-serif;
+    color: $purple;
+    font-size: 30px;
+    margin-top: 19px;
+    text-align: center;
+    @media (max-width: 992px) {
+        font-size: 24px;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+}
+
+.intro-content__version {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #848E97;
+    text-transform: uppercase;
+    margin-top: 19px;
+    text-align: center;
+    @media (max-width: 992px) {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+}
+
+.intro__download {
+    position: absolute;
+    font-size: 21px;
+    line-height: 22px;
+    font-weight: bold;
+    padding: 23px 61px;
+    border: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    background-color: $purple;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 2px solid $purple;
+    cursor: pointer;
+    &:hover {
+        color: $purple;
+        background-color: #ffffff;
+    }
+    @media (max-width: 480px) {
+        padding: 15px 29px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
