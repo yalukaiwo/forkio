@@ -375,3 +375,29 @@
         align-items: center;
     }
 }
+.page__what-you-get{
+    height: 711px;
+    @media (max-width: 992px) {
+        height: 1259px;
+    }
+    @media (max-width: 480px) {
+        height: 1530px;
+    }
+}
+.section__main-wrapper{
+    display: flex;
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+.main__features-wrapper{
+   width: 530px;
+   margin-left: 101px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;  
+}
+.feature-wrapper__item{
+    display: flex;
+}
