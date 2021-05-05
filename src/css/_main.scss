@@ -398,10 +398,11 @@
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   align-items: flex-start;  
+   align-items: flex-end;  
 }
 .feature-wrapper__item{
     display: flex;
+    justify-content: flex-end;
     gap: 35px;
 }
 
@@ -417,6 +418,9 @@
     &::after{
         content: ">";
     }
+}
+.item__text{
+    width: 407px;
 }
 .item__heading{
     font-family: 'Montserrat', sans-serif;
