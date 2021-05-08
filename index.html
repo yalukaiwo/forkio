@@ -81,7 +81,7 @@
     <section class="page__what-you-get">
         <div class="section__main-wrapper">
             <div class="main__features-wrapper">
-                <article class="feature-wrapper__item">
+                <!-- <article class="feature-wrapper__item"> -->
                     <img src="./dist/img/icon1.png"
                     width="111"
                     height="64"
@@ -90,8 +90,8 @@
                         <p class="item__heading">Created to Make The Web Better</p>
                         <p class="item__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
                     </div>
-                </article>
-                <article class="feature-wrapper__item">
+                <!-- </article> -->
+                <!-- <article class="feature-wrapper__item"> -->
                     <img src="./dist/img/icon2.png"
                     width="90"
                     height="80"
@@ -100,8 +100,8 @@
                         <p class="item__heading">Incredibly Powerful Tool</p>
                         <p class="item__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
                     </div>
-                </article>
-                <article class="feature-wrapper__item">
+                <!-- </article>
+                <article class="feature-wrapper__item"> -->
                     <img src="./dist/img/icon3.png"
                     width="60"
                     height="84"
@@ -110,8 +110,8 @@
                         <p class="item__heading">Experimental Stuff</p>
                         <p class="item__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
                     </div>
-                </article>
-                <article class="feature-wrapper__item">
+                <!-- </article>
+                <article class="feature-wrapper__item"> -->
                     <img src="./dist/img/icon4.png"
                     width="71"
                     height="71"
@@ -120,11 +120,48 @@
                         <p class="item__heading">Created to Make The Web Better</p>
                         <p class="item__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
                     </div>
-                </article>
+                <!-- </article> -->
             </div>
             <div class="main__heading-screen">
                 <h1 class="section__heading purple">Here is what you get</h1>
-                <img src="./dist/img/screen.png" alt="" class="screenshot">
+                <img srcset="./dist/img/screen.png 700w,
+                ./dist/img/screen320.png 317w" alt="" class="screenshot"
+                sizes="(max-width: 480px) 317px,
+            (max-width: 992px) 700px">
+            </div>
+        </div>
+    </section>
+
+    <section class="page__subscription">
+        <h1 class="test">Fork Subscription Pricing</h1>
+        <div class="subscription__option-purchase-wrapper">
+            <div class="option-purchase-wrapper__option">
+                <p class="option__title">Students</p>
+                <p class="option__price">129</p>
+                <p class="option__title option__title--small-title">per month</p>
+                <p class="option__description">Personal License</p>
+                <a href="" class="option__btn">purchase</a>
+            </div>
+            <div class="option-purchase-wrapper__option">
+                <p class="option__title">Students</p>
+                <p class="option__price">229</p>
+                <p class="option__title option__title--small-title">per month</p>
+                <p class="option__description">Personal License</p>
+                <a href="" class="option__btn">purchase</a>
+            </div>
+            <div class="option-purchase-wrapper__option">
+                <p class="option__title">Students</p>
+                <p class="option__price">329</p>
+                <p class="option__title option__title--small-title">per month</p>
+                <p class="option__description">Personal License</p>
+                <a href="" class="option__btn">purchase</a>
+            </div>
+            <div class="option-purchase-wrapper__option">
+                <p class="option__title">Students</p>
+                <p class="option__price">429</p>
+                <p class="option__title option__title--small-title">per month</p>
+                <p class="option__description">Personal License</p>
+                <a href="" class="option__btn">purchase</a>
             </div>
         </div>
     </section>

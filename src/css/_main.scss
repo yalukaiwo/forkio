@@ -395,10 +395,14 @@
 .main__features-wrapper{
    width: 530px;
    margin-left: 101px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: flex-end;  
+   margin-top: 102px;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-evenly;
+//    align-items: flex-end;  
 }
 .feature-wrapper__item{
     display: flex;
@@ -437,4 +441,63 @@
     font-size: 14px;
     color: $grayfont;
     padding-top: 16.3px;
+}
+.main__heading-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.screenshot{
+    height: 519px;
+    @media (max-width: 480px) {
+        height: 320px;
+    }
+}
+.page__subscription{
+    height: 878px;
+    background-image: url(../../dist/img/subscription-background-wide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 992px) {
+        height: 1319px;
+        background-image: url(../../dist/img/subscription-background-768.png);
+    }
+    @media (max-width: 480px) {
+        height: 2117px;
+        background-image: url(../../dist/img/subscription-background-320.png);
+    }
+}
+.test{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 114px;
+    text-align: center;
+    @media (max-width: 992px) {
+        padding-top: 90px;
+        font-size: 42px;
+    }
+    @media (max-width: 480px) {
+        padding-top: 14px;
+        word-break: break-all;
+        font-size: 28px;
+    }
+}
+.subscription__option-purchase-wrapper{
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 61px;
+    @media (max-width: 992px) {
+        margin-top: 39px;
+        
+    }
+    @media (max-width: 480px) {
+        margin-top: 32px;
+    }
+}
+.option-purchase-wrapper__option{
+    background-color: red;
 }
