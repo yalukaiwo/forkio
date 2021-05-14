@@ -646,3 +646,113 @@
     margin: 0px auto;
     border-radius: 25px;
 }
+
+.page__talk {
+    position: relative;
+    background-image: url(../../dist/img/testimonals-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 108px 80px 18px;
+    @media (max-width: 992px) {
+        padding: 85px 10px 19px;
+    }
+    @media (max-width: 992px) {
+        padding: 57px 25px 15px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        max-width: 780px;
+        width: 100%;
+        height: 2px;
+        background-color: #645766;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @media (max-width: 992px) {
+            max-width: 555px;
+        }
+        @media (max-width: 570px) {
+            max-width: 300px;
+        }
+        @media (max-width: 480px) {
+            max-width: 245px;
+        }
+    }
+}
+
+.talk__title {
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 81px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    @media (max-width: 992px) {
+        font-size: 42px;
+        line-height: 44px;
+    }
+    @media (max-width: 480px) {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 53px;
+    }
+}
+
+.talk__wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.talk__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 345px;
+    margin-bottom: 112px;
+    @media (max-width: 992px) {
+        max-width: 266px;
+        margin-bottom: 60px;
+    }
+    @media (max-width: 480px) {
+        max-width: 266px;
+        margin-bottom: 45px;
+    }
+}
+
+.talk__paragraph {
+    text-align: center;
+    color: white;
+    margin-top: 31px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.talk__ending {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    max-width: 890px;
+    margin: 0 auto;
+    color: #a291a5;
+    @media (max-width: 992px) {
+        max-width: 705px;
+        margin-top: 70px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 40px;
+        max-width: 252px;
+    }
+}
