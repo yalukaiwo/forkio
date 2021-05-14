@@ -395,41 +395,42 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 33px;
+    gap: 50px;
     @media (max-width: 992px) {
         flex-direction: column;
         position: relative;
+        padding-bottom: 0px;
     }
 }
 .main__features-wrapper{
-   width: 530px;
+   width: 589px;
    margin-left: 90px;
    margin-top: 98px;
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 23px;
+   display: flex;
   align-items: flex-start;
   row-gap: 35px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   @media (max-width: 992px) {
-    width: 530px;
+    width: unset;
+    margin-left: 30px;
     margin-top: 153px;
 }
 @media (max-width: 480px) {
-    // height: 1530px;
     width: unset;
 } 
 }
-.feature-wrapper__item{
+.features-wrapper__item{
     display: flex;
-    justify-content: flex-end;
+    gap: 23px;
 }
 
 .purple{
-    font-size: 48px;
+    font-size: 46px;
     color: $purple;
     text-transform:capitalize;
     margin-top: 0px;
-    // margin-bottom: 18.9px;
+    margin-bottom: 18.9px;
     &::before{
         content: "<";
     }
@@ -440,7 +441,7 @@
         position: absolute;
         top: 62px;
         font-size: 42px;
-        left: 25%;
+        left: calc(50% - 260px);
     }
     @media (max-width: 480px) {
         font-size: 32px;
@@ -473,30 +474,57 @@
     font-size: 14px;
     color: $grayfont;
     padding-top: 16.3px;
+    @media (max-width: 992px) {
+        padding-right: 10px;
+    }
+    @media (max-width: 480px) {
+        // height: 1530px;
+    } 
 }
 .img-wrapper{
     text-align: center;
 }
 .icons__feature--potion{
-    padding-right: 31px;
+    padding-right: 51px;
+    @media (max-width: 992px) {
+        padding-right: 47px;
+        padding-left: 16px;
+    }
+    @media (max-width: 480px) {
+        
+    } 
 }
 .icons__feature--newspaper{
     padding-right: 13px;
 }
 .icons__feature--disc{
-    padding-right: 30px;
+    padding-right: 34px;
 }
 .icons__feature--speed{
-    padding-right: 26px;
+    padding-right: 44px;
+    @media (max-width: 992px) {
+        padding-right: 38px;
+        padding-left: 14px;
+    }
+    @media (max-width: 480px) {
+        
+    } 
 }
 .main__heading-screen{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 94px;
+    @media (max-width: 992px) {
+        padding-top: 76px;
+    }
 }
 .screenshot{
     width: 100%;
+    @media (max-width: 992px) {
+        width: 91%;
+        margin-left: auto;
+    }
     @media (max-width: 480px) {
         display: none;
     }
