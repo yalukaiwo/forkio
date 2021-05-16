@@ -267,7 +267,6 @@ ServiceFabricBackup/
 
 # Microsoft Fakes
 FakesAssemblies/
-dist
 # GhostDoc plugin setting file
 *.GhostDoc.xml
 
@@ -348,5 +347,3 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-
-dist
