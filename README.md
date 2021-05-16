@@ -2,7 +2,7 @@
 ## List of used technologies :
 **HTML5**, **CSS3**, **SASS**, **Gulp4**, **JS**, **Node.js**
 ## Our Team :
- **Luka**
+ **Luka Ponomarenko**
 
  **Daniil Shcherbakov**
 
