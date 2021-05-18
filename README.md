@@ -1,6 +1,6 @@
 # The Forkio Project
 ## List of used technologies :
-**HTML5**, **CSS3**, **SASS**, **Gulp4**, **JS**, **Node.js**
+**HTML5**, **CSS3**, **SСSS**, **Gulp4**, **JS**, **Node.js**
 ## Our Team : 
  **Luka Ponomarenko**
 
