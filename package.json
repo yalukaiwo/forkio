@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yalukaiwo/forkio.git"
+    "url": "git+https://github.com/coyjiv/Step_Forkio.git"
   },
   "keywords": [
     "forkio",
@@ -20,12 +20,12 @@
     "npm",
     "node"
   ],
-  "author": "Luka",
+  "author": "Daniil",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yalukaiwo/forkio/issues"
+    "url": "https://github.com/coyjiv/Step_Forkio/issues"
   },
-  "homepage": "https://github.com/yalukaiwo/forkio#readme",
+  "homepage": "https://github.com/coyjiv/Step_Forkio#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
